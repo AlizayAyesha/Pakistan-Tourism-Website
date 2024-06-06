@@ -31,4 +31,12 @@ Hosting the source code and files.
 This project is licensed under the MIT License.
 
 # RESULTS
-Can be seen in the website link
+Can be seen in the website link also
+
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/ec0c21d7-2a51-4a74-ad1b-c250f12399ae)
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/60d53c38-2157-4bcf-a5dc-f7f5468ecbb6)
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/cae931d9-95fb-4a6c-be54-79d6997fdaaf)
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/adf3cb32-d0f0-4a31-bac9-9c9b372406ff)
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/d2b03fa7-a1ac-48c5-a269-d6c874c9bb6f)
+![image](https://github.com/AlizayAyesha/Pakistan-Tourism-Website/assets/68489612/f869b72e-a17f-4ef4-ac96-69421faf56c9)
+
