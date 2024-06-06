@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(27, 159, 111, 0.5); 
+    z-index: 1; /* Add this to ensure the nav bar is on top of other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .logo-container {
+    margin-left: 40px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White logo text */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  }
+  
+  ul {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li {
+    margin-left: 30px;
+    list-style: none;
+  }
+  
+  button {
+    border: 1px solid #fff; /* Add a white border */
+    padding: 20px 30px; /* Increase padding to make the box bigger */
+    width: 150px; /* Set a fixed width to make the box bigger */
+    border-radius: 10px; /* Increase border radius to make the box more rounded */
+    background-color: rgb(77, 208, 160); 
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(182, 177, 177, 0.1); /* Add a subtle shadow */
+  }
+  button:hover {
+    color: rgb(50, 144, 50);
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 #e5e1e1; /* Increase shadow depth on hover */
+    transform: translateY(-2px); /* Add a subtle translate effect on hover */
+  }
+  //header area
+
+  main {
+    background: url(https://naturehikepakistan.pk/wp-content/uploads/elementor/thumbs/hunza-valley-autumnn-min-qko520gkxgnwv73gnt71nqm9y4tm4r1qnxz3ttpfuw.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    p {
+      max-width: 600px;
+      margin: 10px;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+   
+  }
+  
+  .card {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card-content {
+      width: 500px;
+      height: 500px;
+      padding: 20px;
+      margin: 0 2rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      box-shadow: 0 5px 10px rgb(1, 55, 13); /* Add a subtle shadow */
+      display: block; /* Make the a tag a block element */
+      background-color: rgba(103, 197, 139, 0.541);
+      h1 {
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1rem;
+      }
+      p {
+        flex-basis: 100%;
+        margin-top: 1rem;
+      }
+      ol {
+        list-style: decimal; /* Use decimal numbering for the list */
+        margin: 0;
+        padding: 0;
+        li {
+          margin-bottom: 10px; /* Add some space between list items */
+        }
+      a {
+        text-decoration: underline;
+        margin-top: 1rem;
+        
+      }
+    }
+    .card-img {
+      width: 400px;
+      margin-right: 2rem;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      
+        }
+    }
+   
+
+   
+    }
+
+
+
+//gallery
+.gallery{
+    margin-top: 6rem;
+    
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 5rem;
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+
+    }
+
+    .img{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items:center ;
+       box-shadow: 0 5px 10px rgba(0, 43, 10, 0.806); /* Add a subtle shadow */
+       margin: 20px;
+       background-color: rgba(0, 82, 15, 0.626);
+    }
+    .gallery-img{
+        width: 300px;
+        margin: 20px;
+
+    }
+}
+
+//footer
+footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 96, 78);
+    color: white;
+    flex-direction: column;
+      input{
+         padding: 10px 20px;
+          margin-bottom:  20px;
+          margin-top: 0;
+  
+  
+      }
+      textarea{
+          padding: 20px;
+          width: 420px;
+          height: 200px;
+          margin-bottom: 20px;
+          background-color: rgb(11, 214, 123);
+      }
+      a{
+          text-decoration: none;
+          color: #fff;
+          background:green;
+          padding: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+  }
+
+ 
