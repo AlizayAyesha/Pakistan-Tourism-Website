@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,6 +60,7 @@ button:hover {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 #e5e1e1; /* Increase shadow depth on hover */
   transform: translateY(-2px); /* Add a subtle translate effect on hover */
+  cursor: pointer;
 }
 
 main {
