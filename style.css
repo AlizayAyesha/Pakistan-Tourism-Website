@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -53,6 +49,7 @@ button {
   background-color: rgb(77, 208, 160);
   color: #fff;
   box-shadow: 0 2px 5px 0 rgba(182, 177, 177, 0.1); /* Add a subtle shadow */
+  transition: 0.5s;
 }
 
 button:hover {
@@ -60,7 +57,7 @@ button:hover {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 #e5e1e1; /* Increase shadow depth on hover */
   transform: translateY(-2px); /* Add a subtle translate effect on hover */
-  cursor: pointer;
+  transition: 0.5s;
 }
 
 main {
@@ -178,8 +175,6 @@ footer input {
   margin-bottom: 20px;
   margin-top: 0;
   background-color: rgba(147, 240, 198, 0.811);
-
-
 }
 footer textarea {
   padding: 20px;
