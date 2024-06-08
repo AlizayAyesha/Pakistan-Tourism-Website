@@ -58,6 +58,7 @@ button:hover {
   box-shadow: 0 4px 8px 0 #e5e1e1; /* Increase shadow depth on hover */
   transform: translateY(-2px); /* Add a subtle translate effect on hover */
   transition: 0.5s;
+  cursor: pointer;
 }
 
 main {
