@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
