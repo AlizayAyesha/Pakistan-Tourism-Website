@@ -12,7 +12,12 @@
         <div class="logo-container">
           <h1 class="logo">Pakistan </h1>
         </div>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
           <li><button href="#">HOME</button ></li>
           <li><button href="#">ABOUT</button ></li>
           <li><button  href="#">GALLERY</button ></li>
@@ -99,5 +104,22 @@
         <br><br><p><b></b>&copy; 2025 ,  All Rights Reserved.</p>
     </div>
 </footer>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    mobileMenu.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a menu item
+    document.querySelectorAll('.nav-menu li button').forEach(item => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
