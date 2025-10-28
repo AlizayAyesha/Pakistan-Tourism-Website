@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Pakistan Tourism - Explore the Beauty</title>
 </head>
 <body>
-    <nav>
-        <div class="logo-container">
-          <h1 class="logo">Pakistan </h1>
+    <nav class="navbar">
+        <div class="nav-container">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">🏔️</span>
+            <span class="logo-text">Pakistan Tourism</span>
+          </a>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="nav-btn">Plan Your Trip</a></li>
+          </ul>
         </div>
-        <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-menu">
-          <li><button href="#">HOME</button ></li>
-          <li><button href="#">ABOUT</button ></li>
-          <li><button  href="#">GALLERY</button ></li>
-          <li><button  href="#">CONTACT</button ></li>
-        </ul>
       </nav>
     <!--Header-->
-    <main>
+    <main id="home">
         <section class="content-container">
             <h1>Places Of Heaven</h1>
             <p class="info">
@@ -35,7 +40,7 @@
         </section>
     </main>
 <!-- feature section -->
-<section class="card">
+<section id="destinations" class="card">
     <div class="card-content">
         <h1>Hunza</h1>
         <p>
@@ -70,7 +75,7 @@
     <img src="2ndjpg.jpg"class="card-img" title="Attabad Lake Hunza">
 
 </section>
-<section class="gallery">
+<section id="gallery" class="gallery">
     <h1>"MORE HEAVENLY PLACES ARE IN THIS GALLERY"</h1>
     <h2>Explore the breathtaking beauty of Pakistan</h2>  <!-- ADDED HEADING HERE -->
     <div class="img">
@@ -87,37 +92,97 @@
     </div>
 </section>
 
-<footer style="background-color: lightyellow; border-radius:80%;font-size:larger" >
-   
-    <form>
-        <div>
-            <h2 style="color:black">Send Message</h2>
+<footer id="contact">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Pakistan Tourism</h2>
+                <p>Discover the breathtaking beauty of Pakistan - from majestic mountains to serene valleys, pristine lakes to ancient forts. Experience the warmth of Pakistani hospitality and explore the hidden gems of this beautiful country.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section destinations">
+                <h3>Popular Destinations</h3>
+                <ul>
+                    <li><a href="#">Hunza Valley</a></li>
+                    <li><a href="#">Skardu</a></li>
+                    <li><a href="#">Swat Valley</a></li>
+                    <li><a href="#">Naran Kaghan</a></li>
+                    <li><a href="#">Fairy Meadows</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Get In Touch</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
-        <div class="name-email">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 All Rights Reserved.</p>
+            <p>Developed by</p>
+            <p class="developer-name">(~: Alizay Ayesha :~)</p>
         </div>
-        <textarea>Some text here....</textarea>
-        <button>Send Message</button>
-    </form>
-    <div class="copyright" style="color:black">
-        <br><br><p><b></b>&copy; 2025 ,  All Rights Reserved.</p>
     </div>
 </footer>
 <script>
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.querySelector('.nav-menu');
-
-    mobileMenu.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-        navMenu.classList.toggle('active');
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    mobileMenuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
     });
-
-    // Close menu when clicking on a menu item
-    document.querySelectorAll('.nav-menu li button').forEach(item => {
-        item.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            navMenu.classList.remove('active');
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link, .nav-btn').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
+    });
+    
+    // Active nav link on scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id], main[id], footer[id]');
+        const navLinksElements = document.querySelectorAll('.nav-link');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinksElements.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
         });
     });
 </script>
